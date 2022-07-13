@@ -1,0 +1,154 @@
+@media (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .loginModalContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 100;
+    font-size: 16px;
+  }
+
+  .loginModalBox {
+    background-color: #f7f7f7;
+    position: absolute;
+    width: 100%;
+    color: navy;
+    bottom: 0;
+    padding: 50px 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transform: translateY(100%); */
+    animation-name: slidein;
+    animation-duration: 0.5s;
+  }
+
+  .loginModalBox label {
+    display: block;
+  }
+
+  .loginModalBox small {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .loginModalBox .errMsg {
+    text-align: right;
+    visibility: hidden;
+    color: red;
+  }
+
+  .loginModalBox .forget a {
+    text-decoration: none;
+    color: navy;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .loginModalBox input {
+    width: 70vw;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    transition: 0.5s ease-in;
+  }
+
+  .loginModalBox input:focus {
+    outline: none;
+    border: 1px solid navy;
+  }
+
+  .loginModalBox button {
+    padding: 10px 20px;
+    color: black;
+    background-color: tomato;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    width: 100%;
+    color: navy;
+    font-size: 16px;
+  }
+
+  .loginModalBox .closeLoginModal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+  }
+
+  .loginModalBox .formHead {
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .loginModalBox .formSubHead {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .loginModalBox .submit {
+    text-align: center;
+  }
+
+  .avtar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: tomato;
+    margin: 20px auto;
+  }
+
+  .avtar img {
+    width: 70px;
+    height: 70px;
+  }
+  .signup {
+    margin-top: 20px;
+    color: navy;
+    font-size: 18px;
+  }
+
+  .loginModalBox .forget {
+    text-align: left;
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}

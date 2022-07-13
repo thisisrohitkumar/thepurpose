@@ -1,0 +1,1162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+:root {
+  --primary-color: #e96235;
+  --secondary-color: #194071;
+  --accent-color: #f7f7f7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.top {
+  position: fixed;
+  left: 10px;
+  bottom: 60px;
+  z-index: 100;
+  font-size: 30px;
+  transition: 1s ease-in;
+  display: none;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.slider-menu {
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: table;
+  background-color: var(--primary-color);
+  transition: 0.5s ease-in;
+  opacity: 0.95;
+  transform: translateX(100%);
+}
+.mob-menu-items {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 20px;
+}
+.mob-menu-items ul li {
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-color);
+  padding: 20px 20px;
+  color: var(--accent-color);
+}
+
+.mob-menu-items i {
+  margin-right: 10px;
+}
+
+#close-btn {
+  display: none;
+  transition: 0.5s ease;
+}
+
+#open-btn {
+  transition: 0.5s ease;
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  padding: 8px 8px;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+nav div {
+  width: 30%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search {
+  flex: 1;
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+nav .brand img {
+  width: 200px;
+  height: 60px;
+}
+/* 
+nav .brand h1 {
+  color: var(--primary-color);
+  margin-left: 30px;
+  font-size: 40px;
+  font-family: "Allura", cursive;
+} */
+
+.search input {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  font-size: 15px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search i {
+  position: absolute;
+  color: var(--primary-color);
+  margin-left: -35px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+nav .desktop-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: var(--accent-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  transition: 0.5s ease-in-out;
+}
+
+nav .desktop-menu ul li:hover {
+  background-color: var(--accent-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: 0.5s ease-in-out;
+}
+
+nav .desktop-menu ul li i {
+  margin-right: 5px;
+}
+
+.toggle-btn {
+  flex: 1;
+  display: none;
+}
+
+.goto {
+  width: 85%;
+  font-size: 20px;
+  color: var(--accent-color);
+  padding: 10px 10px;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.goto a {
+  color: var(--accent-color);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--accent-color);
+}
+
+main {
+  text-align: center;
+}
+
+main img {
+  margin-top: 80px;
+  width: 100%;
+  height: 250px;
+  max-width: 800px;
+}
+
+.mobile-search-bar {
+  text-align: center;
+  padding: 10px 10px;
+  display: none;
+  background-color: var(--accent-color);
+}
+
+.mobile-search-bar input {
+  padding: 10px 20px;
+  width: 90%;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  color: var(--primary-color);
+}
+
+.mobile-search-bar input:focus {
+  outline: none;
+}
+
+.mobile-search-bar i {
+  margin-left: -40px;
+  color: var(--primary-color);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--accent-color);
+  padding: 20px;
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.fast-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.fruits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.vegitables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.medicine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.deals {
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--accent-color);
+}
+
+.deals div {
+  width: 45%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  color: var(--accent-color);
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+.deals div small {
+  color: var(--secondary-color);
+  font-size: 12px;
+}
+
+.deals div i {
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+
+.refer {
+  width: 85%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  background-color: rgb(255, 230, 163);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.refer i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.refer button {
+  margin-top: 10px;
+  padding: 8px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+}
+
+.brandDiv {
+  width: 89%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: var(--accent-color);
+}
+
+.brandDiv i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.brandDiv small {
+  color: var(--secondary-color);
+}
+
+.free {
+  text-align: center;
+  padding: 20px 20px;
+  width: 50%;
+  border-radius: 10px;
+  margin: 30px auto;
+  border: 2px solid var(--primary-color);
+  background-color: rgb(255, 230, 163);
+}
+
+.free p {
+  margin-top: 10px;
+  padding: 8px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+}
+
+.free img {
+  width: 240px;
+}
+
+/* Products Section Design */
+
+.pro-head {
+  width: 100%;
+  padding: 10px 10px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.pro-head h2 {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.products {
+  width: 100%;
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  padding: 10px 10px;
+}
+
+.products i {
+  font-size: 30px;
+}
+
+.dairy-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+.fast-food-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+.fast-food-pro .pro-1,
+.pro-2 {
+  display: none;
+  flex: 4;
+  font-size: 15px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--primary-color);
+}
+
+.pro-1 i,
+.pro-2 i {
+  font-size: 50px;
+}
+
+.pro-1 div button,
+.pro-2 div button {
+  padding: 2px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+button:focus {
+  outline: none;
+}
+
+.fast-food-pro .pro-2 {
+  border-right: none;
+}
+
+.hide-pro {
+  display: none;
+  flex: 1;
+  align-items: center;
+  text-align: right;
+  cursor: pointer;
+}
+
+.hide-pro i {
+  font-size: 20px;
+}
+.vegies-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+.health-n-fitness-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+.household-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+
+.stationary-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+
+.fruits-pro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+
+.demo-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-pro-det {
+  margin-top: 10px;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  border-top: 1px dotted var(--primary-color);
+  padding: 10px 10px;
+}
+
+.demo-pro-1 {
+  flex: 4;
+  text-align: center;
+}
+.demo-pro-2 {
+  flex: 4;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.demo-hide-pro {
+  flex: 1;
+  text-align: right;
+}
+
+.demo-hide-pro {
+  flex: 1;
+}
+
+.demo-hide-pro i {
+  font-size: 20px;
+}
+
+.demo-pro-1 i,
+.demo-pro-2 i {
+  font-size: 50px;
+}
+
+.demo-pro-1 div button,
+.demo-pro-2 div button {
+  padding: 2px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+button:focus {
+  outline: none;
+}
+.beverages-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+.grocery-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+.beauty-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px 10px;
+}
+
+.pro-icon {
+  flex: 2;
+}
+
+.pro-cat {
+  flex: 6;
+}
+
+.pro-disc {
+  color: green;
+  font-size: 12px;
+}
+
+.pro-det {
+  flex: 1;
+  text-align: right;
+}
+
+.pro-icon i {
+  font-size: 40px;
+}
+
+.pro-det i {
+  font-size: 20px;
+}
+
+.pro-detx {
+  font-size: 12px;
+  color: var(--secondary-color);
+}
+
+.poster-2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.poster-2 img {
+  width: 70%;
+  height: 250px;
+}
+
+footer {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+  padding: 10px 10px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--primary-color);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+footer div {
+  padding: 10px 10px;
+  flex: 1;
+  text-align: center;
+  width: 100%;
+}
+
+footer .cities-options,
+.brand-options,
+.payment-options,
+.help-options,
+.social-options {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.social-options div i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: var(--accent-color);
+}
+
+#insta {
+  margin-right: 0px;
+}
+
+.credits-options {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.msme {
+  color: var(--accent-color);
+}
+
+.bottom-nav {
+  width: 100%;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.bottom-nav div {
+  width: 30%;
+  font-size: 12px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.cart i,
+.offers i,
+.profile i {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 20px;
+  display: block;
+}
+
+/* Login / SignUp Modal Design */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in;
+}
+
+.modal-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-container small {
+  display: block;
+}
+
+.modal-header i {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.login-signup-modal {
+  background-color: var(--primary-color);
+  width: 90%;
+  max-width: 1000px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: modal 0.5s;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.modal-header {
+  width: 100%;
+  padding: 20px 50px;
+  flex: 1;
+}
+
+.heading-pur {
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.modal-body {
+  width: 100%;
+  padding: 15px 50px;
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-signup-modal input {
+  width: 250px;
+  padding: 10px 10px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.login-signup-modal input:focus {
+  outline: none;
+}
+
+.login-signup-modal .error-msg {
+  visibility: hidden;
+}
+
+.login-signup-modal button {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+  width: 250px;
+  margin-top: 20px;
+  padding: 8px 8px;
+  color: var(--primary-color);
+}
+
+.create-account button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.register-form {
+  display: none;
+}
+
+/* Offers Modal Design */
+.offers-modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in;
+}
+
+.offers-modal-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.offers-modal-container small {
+  display: block;
+}
+
+.offers-modal-header i {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.offers-modal-header {
+  width: 100%;
+  padding: 30px 50px;
+  flex: 1;
+}
+
+.heading-pur {
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.offers-modal {
+  background-color: var(--primary-color);
+  width: 90%;
+  max-width: 1000px;
+  height: 85%;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: offers-modal 0.5s;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.offers-modal-body {
+  width: 100%;
+  padding: 10px 20px;
+  flex: 2;
+}
+
+.offers-modal-body .products .beverages-pro,
+.offers-modal-body .products .grocery-pro,
+.offers-modal-body .products .beauty-pro {
+  flex-direction: column;
+}
+
+/* Bag Modal Design */
+.bag-modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in;
+}
+
+.bag-modal-header i {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.bag-modal-header {
+  width: 100%;
+  padding: 30px 50px;
+  flex: 1;
+}
+
+.heading-pur {
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.bag-modal {
+  background-color: var(--primary-color);
+  width: 90%;
+  max-width: 1000px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: bag-modal 0.5s;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.bag-modal-body {
+  width: 100%;
+  padding: 20px 50px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bag-modal-body i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.bag-modal-body div button {
+  padding: 10px 10px;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 250px;
+}
+
+/* profile Modal Design */
+.profile-modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in;
+}
+
+.profile-modal-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.profile-modal-container small {
+  display: block;
+}
+
+.profile-modal-header i {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.profile-modal-header {
+  width: 100%;
+  padding: 30px 50px;
+  flex: 1;
+}
+
+.heading-pur {
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.profile-modal {
+  background-color: var(--primary-color);
+  width: 90%;
+  max-width: 1000px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: profile-modal 0.5s;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.profile-modal-body {
+  width: 100%;
+  padding: 20px 50px;
+  flex: 2;
+}
+
+.profile-modal-body i {
+  font-size: 100px;
+  margin-bottom: 50px;
+}
+
+.profile-modal-body div button {
+  padding: 10px 10px;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 250px;
+}
+
+@media (max-width: 600px) {
+  .brand {
+    flex: 5;
+  }
+  .search {
+    display: none;
+  }
+  .desktop-menu {
+    display: none;
+  }
+
+  nav .brand h1 {
+    color: var(--primary-color);
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: "Allura", cursive;
+  }
+  .toggle-btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 40px;
+  }
+
+  .mobile-search-bar {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .free {
+    width: 85%;
+  }
+
+  .poster-2 img {
+    width: 90%;
+    height: 250px;
+  }
+
+  .bottom-nav {
+    display: flex;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .categories {
+    background-color: var(--accent-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes disco {
+  from {
+    font-size: 20px;
+    /* color: var(--accent-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color); */
+  }
+  to {
+    font-size: 25px;
+    /* color: var(--primary-color);
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color); */
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes offers-modal {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bag-modal {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes profile-modal {
+  from {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Modal Box</title>
+    <link rel="stylesheet" href="loginModalBoxStyle.css" />
+  </head>
+  <body>
+    <div class="loginModalContainer" id="loginModalContainer">
+      <div class="loginModalBox" id="loginModalBox">
+        <span class="closeLoginModal" onclick="closeLoginModalBox()"
+          >&times;</span
+        >
+
+        <div>
+          <div class="formHead">The Purpose</div>
+          <div class="avtar">
+            <img src="assets/img/avtar.svg" alt="" />
+          </div>
+          <div class="formSubHead">Login Here</div>
+          <div class="phone">
+            <label for="phone"> Phone No. / Email </label>
+            <input
+              type="tel"
+              placeholder="Enter Phone No. / Email"
+              name="phone"
+              id="phone"
+            />
+            <small class="errMsg" id="phoneErr"
+              >Invalid Phone No. / Email</small
+            >
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              id="password"
+            />
+            <small class="errMsg" id="passErr">Invalid Password</small>
+          </div>
+          <div class="forget">
+            <a href="#"><small>Forget Password ?</small></a>
+          </div>
+          <div class="submit">
+            <button onclick="validateLogin()" class="submit" type="submit">
+              LOGIN
+            </button>
+          </div>
+        </div>
+        <div class="signup">Create an Account !</div>
+      </div>
+    </div>
+    <script src="loginModalBoxScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Complete Store | The Purpose</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/brand-logo.png" sizes="16x16" />
+    <!-- Font Awesome 5 CDN -->
+    <script
+      src="https://kit.fontawesome.com/8c06929d00.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="loginModalBoxStyle.css">
+  </head>
+  <body>
+
+    <a href="#home">
+      <div class="top" id="top">
+        <i class="fas fa-chevron-circle-up"></i>
+      </div>
+    </a>
+
+    <!-- Slider Menu For Mobile -->
+    <div class="slider-menu" id="slider-menu">
+        <div class="mob-menu-items">
+          <ul>
+            <li onclick="open_modal()" style="cursor: pointer;"><i class="fas fa-sign-in-alt"></i>Login / Sign Up</li>
+              <li onclick="cart_clicked()"><i class="fas fa-shopping-bag"></i>My Shopping Bag</li>
+              <li onclick="offers_clicked()"> <i class="fas fa-fire-alt"></i>My Offers</li>
+              <li><i class="fas fa-truck"></i></i>My Orders</li>
+              <li><i class="fas fa-info-circle"></i>About Us</li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <nav>
+      <div class="brand">
+        <img src="assets/img/brand-logo.png" alt="" />
+        <!-- <h1>The Purpose</h1> -->
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search Your Favourite Products..." />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="desktop-menu">
+        <ul>
+          <li onclick="offers_clicked()"><i class="fas fa-fire"></i>Offers</li>
+          <li onclick="open_modal()"><i class="fas fa-sign-in-alt"></i>Login / Sign Up</li>
+          <li onclick="cart_clicked()"><i class="fas fa-shopping-cart"></i>My Cart</li>
+        </ul>
+      </div>
+      <div class="toggle-btn">
+        <i class="fas fa-bars" onclick="show_slider()" id="open-btn"></i>
+        <i class="fas fa-times" onclick="hide_slider()" id="close-btn"></i>
+      </div>
+    </nav>
+
+<div class="container">
+  <a name="home"></a>
+  <main>
+    <a href="products.html"><img src="assets/img/poster.jpeg" alt=""></a>
+  </main>
+
+  <!-- Mobile Search Section -->
+  <div class="mobile-search-bar">
+    <form>
+      <input type="text" placeholder="Search Your Products...">
+      <i class="fas fa-search"></i>
+    </form>
+  </div>
+
+  <!-- Horizontal Categories Section -->
+  <section>
+      <div class="fast-food">
+          <i class="fas fa-pump-soap"></i>
+      </div>
+      <div class="fruits">
+          <i class="fas fa-apple-alt"></i>
+      </div>
+      <div class="vegitables">
+          <i class="fas fa-pepper-hot"></i>
+      </div>
+      <div class="medicine">
+          <i class="fas fa-pills"></i>
+      </div>
+  </section>
+
+  <div class="goto">
+    <a href="#categories">View All Categories</a>
+  </div >
+
+  <div class="pro-head">
+    <h2>Daily Usage</h2>
+  </div>
+  <div class="deals">
+    
+    <div>
+        <i class="fas fa-egg"></i>
+      Grocery
+      <small>Upto 30% off</small>
+    </div>
+    <div>
+      <i class="fas fa-pepper-hot"></i>
+      Vegetables
+      <small>Upto 50% off</small>
+    </div>
+  </div>
+
+  <div class="pro-head">
+    <h2>Best Deals</h2>
+  </div>
+  <div class="deals">
+    
+    <div>
+      <i class="fas fa-glass-cheers"></i>
+      Beverages
+      <small>Upto 30% off</small>
+    </div>
+    <div>
+      <i class="fas fa-coffee"></i>
+      Dairy
+      <small>Upto 50% off</small>
+    </div>
+  </div>
+
+  <div class="pro-head">
+    <h2>Top Rated Products</h2>
+  </div>
+  <div class="deals">
+    
+    <div>
+      <i class="fas fa-book"></i></i>
+      Stationery
+      <small>Upto 30% off</small>
+    </div>
+    <div>
+      <i class="fas fa-pump-soap"></i>
+      Household
+      <small>Upto 50% off</small>
+    </div>
+  </div>
+
+  <div class="refer">
+    <i class="fas fa-rupee-sign"></i>
+    <h2>Refer and Earn</h2>
+    <button>Know More</button>
+  </div >
+
+  <div class="pro-head">
+    <h2>Top Brands</h2>
+  </div>
+  <div class="brandDiv">
+    <i class="fas fa-ribbon"></i>
+    <br>
+    Bright Future Life Care
+    <br>
+    <small>Upto 40% off</small>
+  </div >
+  <div class="deals">
+    <div>
+      <i class="fas fa-shield-virus"></i>
+      Noor Shine
+      <small>Upto 30% off</small>
+    </div>
+    <div>
+      <i class="fas fa-otter"></i>
+      Fumes
+      <small>Upto 50% off</small>
+    </div>
+  </div>
+  
+  <a name="categories"></a>
+   <!-- Detailed Products -->
+  <div class="pro-head">
+    <h2>Shop By Category</h2>
+  </div>
+  <div class="products">
+    <div class="dairy-pro">
+      <div class="pro-icon"><i class="fas fa-coffee"></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 50% Off</div>
+        <div>DAIRY PRODUCTS</div>
+        <div class="pro-detx">Get Best Offers on Milk and Milk Products</div>
+      </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+    </div>
+    <div class="fast-food-pro">
+      <div class="pro-icon" id="pro-icon">
+        <i class="fas fa-hamburger"></i>
+      </div>
+      <div class="pro-cat" id="pro-cat">
+        <div class="pro-disc">Upto 20% Off</div>
+        <div>Fast Foods</div>
+        <div class="pro-detx">Hot Offers on Maggie, Chips, Burger, Pasta, Pizza, etc</div>
+      </div>
+      <div class="pro-det" id="pro-det">
+        <i class="fas fa-arrow-circle-down"></i>
+      </div>
+    </div>
+    <div class="vegies-pro">
+      <div class="pro-icon"><i class="fas fa-pepper-hot"></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 30% Off</div>
+        <div>VEGETABLES</div>
+        <div class="pro-detx">Best Offers on Fresh Veggies, Herbs & Seasonings, etc</div>
+      </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+    </div>
+    <div class="health-n-fitness-pro">
+      <div class="pro-icon"><i class="fas fa-heartbeat"></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 40% Off</div>
+        <div>HEALTH AND FITNESS</div>
+        <div class="pro-detx">Medicines, Energy Salts and Drinks, Fitness Bands, etc</div>
+      </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+    </div>
+    <div class="household-pro">
+      <div class="pro-icon"><i class="fas fa-pump-soap"></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 50% Off</div>
+        <div>HOUSEHOLD ITEMS</div>
+        <div class="pro-detx">Detergents, Cleaners, Dishwashers, Repellents, Pooja Needs, etc.</div>
+      </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+    </div>
+    <div class="stationary-pro">
+      <div class="pro-icon"><i class="fas fa-book"></i></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 35% Off</div>
+        <div>STATIONARY ITEMS</div>
+      <div class="pro-detx">Get Best Deals on Books, Notebooks, Pens - Pencils, Scissors, other Art and School Supplies </div>
+    </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+  </div>
+    <div class="fruits-pro">
+        <div class="demo-pro" onclick="openProducts()">
+          <div class="pro-icon"><i class="fas fa-apple-alt"></i></div>
+        <div class="pro-cat">
+          <div class="pro-disc">Upto 20% Off</div>
+          <div>FRUITS</div>
+        <div class="pro-detx">Best Offers on Fresh Fruits like Apple, Mango, Banana, etc</div>
+      </div>
+        <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+        </div>
+        <div class="demo-pro-det" id="demo-pro-det">
+          <div class="demo-pro-1" id="pro-1">
+            <div>
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <div>
+              Apples
+            </div>
+            <div>
+              Rs. 80 | <strike style="color: grey;">Rs. 100</strike>
+            </div>
+            <div>
+              <button onclick="update_bag()"> Add to Bag </button>
+            </div>
+          </div>
+          <div class="demo-pro-2" id="pro-2">
+            <div>
+              <i class="fas fa-carrot"></i></div>
+            <div>
+              Carrots
+            </div>
+            <div>
+              Rs. 40 | <strike style="color: grey;">Rs. 50</strike>
+            </div>
+            <div>
+              <button onclick="update_bag()" id="clicked"> Add to Bag </button>
+            </div>
+          </div>
+          <div class="demo-hide-pro" onclick="demo_hide_pro()" id="demo-hide-pro">
+            <i class="fas fa-times-circle"></i>
+          </div>
+        </div>
+    </div>
+    <div class="beverages-pro">
+      <div class="pro-icon"><i class="fas fa-glass-cheers"></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 35% Off</div>
+        <div>BEVERAGES</div>
+        <div class="pro-detx">
+          Best Offers, Cold Drinks, Juices & Drinks, Tea & Coffee, Water & Soda, Milk Drinks</div>
+      </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+
+    </div>
+    <div class="grocery-pro">
+      <div class="pro-icon"><i class="fas fa-egg"></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 50% Off</div>
+        <div>GROCERY PRODUCTS</div>
+        <div class="pro-detx">Hot offers on Dals & Pulses, Edible oils & Ghee , Atta, Floors & Sooji, etc </div>
+      </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+
+    </div>
+    <div class="beauty-pro">
+      <div class="pro-icon"><i class="fas fa-paint-brush"></i></div>
+      <div class="pro-cat">
+        <div class="pro-disc">Upto 30% Off</div>
+        <div >BEAUTY & HYGIENE</div>
+        <div class="pro-detx">Feminine Hygiene, Oral Care, Men's Gooming, Skin Care, Fragrances, etc</div>
+      </div>
+      <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+    </div>
+  </div>
+
+  <div class="poster-2">
+    <a href="products.html"><img src="assets/img/poster-2.jpg" alt=""></a>
+  </div>
+
+  <!-- Free Delivery Details -->
+  <div class="free">
+    <img src="assets/img/delivery.png" alt="">
+    <p>Know More</p>
+  </div>
+
+  
+
+  <footer>
+    <div class="cities-options">
+      <div style="color: #194071;">
+        Locations
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt"></i> Nilmatha - 226002
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt"></i> Topkhana - 226002
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt"></i> Telibagh - 226002
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt"></i> Dilkusha - 226002
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt"></i>
+        Rajanikhand - 226002
+      </div>
+    </div>
+    <div class="brand-options">
+      <div style="color: #194071;">
+        Brands
+      </div>
+      <div>
+        <i class="fas fa-tags"></i>
+        Deals in All National and Local Brands
+      </div>
+    </div>
+    <div class="payment-options">
+      <div style="color: #194071;">
+        Payment Options
+      </div>
+      <div>
+        <i class="fas fa-rupee-sign"></i>
+        Cash On Delivery
+      </div>
+      <div>
+        <i class="far fa-credit-card"></i>
+        Credit / Debit Card
+      </div>
+      <div>
+        <i class="fas fa-wallet"></i>
+        UPI & E-wallets
+      </div>
+      <div>
+        <i class="fas fa-university"></i>
+        Net Banking
+      </div>
+    </div>
+    <div class="help-options">
+      <div style="color: black;">
+        Help
+      </div>
+      <div>
+        <i class="fas fa-question-circle"></i>
+        FAQs
+      </div>
+      <div>
+        <i class="fas fa-info-circle"></i>
+        About Us
+      </div>
+
+
+      <div>
+        <i class="fas fa-phone-square-alt"></i>
+        Contact Us
+      </div>
+      
+      <div>
+        <i class="fas fa-mobile-alt"></i>
+        Mobile Apps
+      </div>
+      
+      <div>
+        <i class="fas fa-hands-helping"></i>
+        Vendor Connect
+      </div>
+    </div>
+    <div class="social-options">
+      <div style="color: #194071;">
+        Social Links
+      </div>
+      <div>
+        <a href="https://wa.me/08887737779" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/thepurposeofficial" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/thepurposebusiness" target="_blank"><i class="fab fa-instagram" id="insta"></i></a>
+      </div>
+    </div>
+    <div class="credits-options">
+      <div>
+        The Purpose <i class="fas fa-copyright"></i> 2020-21 
+      </div>
+      <div>
+        Crafted with <i class="fas fa-heart"></i> by <a href="https://rjtechport.com" target="_blank">RJTechPort</a>
+      </div>
+    </div>
+    <div class="msme">
+      <div>
+        Registered <i class="fas fa-registered"></i> through MSME
+       </div>
+    </div>  
+  </footer>
+</div>
+
+    <!-- Bottom Navigation Section -->
+    <div class="bottom-nav">
+        <div class="offers" id="offers" onclick="offers_clicked()">
+            <i class="fas fa-fire"></i>
+       Hot Offers
+        </div>
+        <div class="cart" id="cart" onclick="cart_clicked()">
+          <i class="fas fa-shopping-bag"></i>            
+          <p id="bag">Shopping Bag</p>
+        </div>
+        <div class="profile" id="profile" onclick="profile_clicked()">
+            <i class="fas fa-user-circle"></i>
+       Profile
+        </div>
+    </div>
+
+    <!-- Modal Box For Login / Sign Up Activity -->
+    <div class="modal-container" id="modal-container">
+      <div class="login-signup-modal">
+        <div class="modal-header">
+          <div onclick="close_modal()"><i class="fas fa-times-circle"  id="modal-close-btn"></i></div>
+          <div class="heading-pur">The Purpose</div>
+          <div style="margin-top: 20px; font-size: 15px;">Fill Your Login Credentials</div>
+        </div>
+        <div class="modal-body">
+          <div class="form-div">
+            <div class="login-form" id="login-form">
+              <div class="username">
+                <input type="text" name="username" placeholder="Enter Email or Phone No.">
+                <small class="error-msg">Invalid Username</small>
+              </div>
+              <div class="password">
+                <input type="password" name="password" placeholder="Enter Password">
+                <small class="error-msg">Wrong Password</small>
+              </div>
+              <div><small>Forget Password?</small></div>
+              <div class="submit">
+                <button>Login</button>
+              </div>
+              <div class="create-account">
+                <button onclick="show_register_form()">Create Account</button>
+              </div>
+            </div>  
+            <div class="register-form" id="register-form">
+              <div class="name">
+                <input type="text" name="name" placeholder="Enter Full Name">
+                <small class="error-msg">Invalid Name</small>
+              </div>
+              <div class="phone">
+                <input type="text" name="phone" placeholder="Enter Phone No.">
+                <small class="error-msg">Invalid Phone No.</small>
+              </div>
+              <div class="password">
+                <input type="password" name="password" placeholder="Enter Password">
+                <small class="error-msg">Wrong Password</small>
+              </div>
+              <div class="submit">
+                <button>Create My Account</button>
+              </div>
+              <div class="create-account">
+                <button onclick="show_login_form()">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box For Hot Offers Activity -->
+    <div class="offers-modal-container" id="offers-modal-container">
+      <div class="offers-modal">
+        <div class="offers-modal-header">
+          <div onclick="close_offers_modal()"><i class="fas fa-times-circle"  id="offer-modal-close-btn"></i></div>
+          <div class="heading-pur">The Purpose</div>
+          <div style="margin-top: 20px; font-size: 20px;">Hot Offers For You</div>
+        </div>
+        <div class="offers-modal-body">
+          <div class="products">
+            <div class="beverages-pro">
+              <div class="pro-icon"><i class="fas fa-glass-cheers"></i></div>
+              <div class="pro-cat">
+                <div class="pro-disc">Upto 35% Off</div>
+                <div>BEVERAGES</div>
+                <div class="pro-detx">
+                  Best Offers, Cold Drinks, Juices & Drinks, Tea & Coffee, Water & Soda, Milk Drinks</div>
+              </div>
+              <div class="pro-det"><i class="fas fa-arrow-circle-down"></i></div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box For Hot bag Activity -->
+    <div class="bag-modal-container" id="bag-modal-container">
+      <div class="bag-modal">
+        <div class="bag-modal-header">
+          <div onclick="close_bag_modal()"><i class="fas fa-times-circle"  id="offer-modal-close-btn"></i></div>
+          <div class="heading-pur">The Purpose</div>
+          <div style="margin-top: 20px; font-size: 20px;">My Shopping Bag</div>
+        </div>
+        <div class="bag-modal-body">
+          <div><i class="far fa-frown"></i></div>
+          <div style="color: black;">No Items In Your Bag</div>
+          <div>Your Favourite Products are Just a Click Away</div>
+          <div><button onclick="close_bag_modal()">Start Shopping</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box For Profile Activity -->
+    <div class="profile-modal-container" id="profile-modal-container">
+      <div class="profile-modal">
+        <div class="profile-modal-header">
+          <div onclick="close_profile_modal()">
+            <i class="fas fa-times-circle"  id="offer-modal-close-btn"></i></div>
+          <div class="heading-pur">The Purpose</div>
+          <div style="margin-top: 20px; font-size: 20px;">My Profile</div>
+        </div>
+        <div class="profile-modal-body">
+          <div>
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div>
+            Login to See Your Profile,
+            Orders, Hot Offers and More
+          </div>
+          <div><button onclick="close_profile_modal()">Login</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="loginModalContainer" id="loginModalContainer">
+      <div class="loginModalBox" id="loginModalBox">
+        <span class="closeLoginModal" onclick="closeLoginModalBox()"
+          >&times;</span
+        >
+
+        <div>
+          <div class="formHead">The Purpose</div>
+          <div class="avtar">
+            <img src="assets/img/avtar.svg" alt="" />
+          </div>
+          <div class="formSubHead">Login Here</div>
+          <div class="phone">
+            <label for="phone"> Phone No. / Email </label>
+            <input
+              type="text"
+              placeholder="Enter Phone No. / Email"
+              name="phone"
+              id="phone"
+            />
+            <small class="errMsg" id="phoneErr"
+              >Invalid Phone No. / Email</small
+            >
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              id="password"
+            />
+            <small class="errMsg" id="passErr">Invalid Password</small>
+          </div>
+          <div class="forget">
+            <a href="#"><small>Forget Password ?</small></a>
+          </div>
+          <div class="submit">
+            <button onclick="validateLogin()" class="submit" type="submit">
+              LOGIN
+            </button>
+          </div>
+        </div>
+        <div class="signup">Create an Account !</div>
+      </div>
+    </div>
+    <script src="loginModalBoxScript.js"></script>
+  </body>
+  <script src="script.js"></script>
+</html>

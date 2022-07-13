@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+:root {
+  --primary-color: #e96235;
+  --secondary-color: #194071;
+  --accent-color: #f7f7f7;
+}
+
+.container {
+  background-color: var(--accent-color);
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  border: 1px solid var(--accent-color);
+}
+
+.container .pro-category-list {
+  list-style: none;
+  border: 1px solid var(--primary-color);
+}
+
+.container .pro-category-list ul {
+  list-style: none;
+}
+
+.container .pro-category-list ul li {
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--primary-color);
+  display: block;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.container .pro-category-list ul li:first-child {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+.container .grocery-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: grid;
+}
+
+.container .grocery-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+
+.container .beauty-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .beauty-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .beauty-pro-list .prod-1 {
+}
+.container .beauty-pro-list .prod-2 {
+}
+.container .beauty-pro-list .prod-3 {
+}
+.container .beauty-pro-list .prod-4 {
+}
+.container .beauty-pro-list .prod-5 {
+}
+
+.container .stationery-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .stationery-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .stationery-pro-list .prod-1 {
+}
+.container .stationery-pro-list .prod-2 {
+}
+.container .stationery-pro-list .prod-3 {
+}
+.container .stationery-pro-list .prod-4 {
+}
+.container .stationery-pro-list .prod-5 {
+}
+
+.container .dairy-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .dairy-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .dairy-pro-list .prod-1 {
+}
+.container .dairy-pro-list .prod-2 {
+}
+.container .dairy-pro-list .prod-3 {
+}
+.container .dairy-pro-list .prod-4 {
+}
+.container .dairy-pro-list .prod-5 {
+}
+
+.container .vegetables-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .vegetables-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .vegetables-pro-list .prod-1 {
+}
+.container .vegetables-pro-list .prod-2 {
+}
+.container .vegetables-pro-list .prod-3 {
+}
+.container .vegetables-pro-list .prod-4 {
+}
+.container .vegetables-pro-list .prod-5 {
+}
+
+.container .fruits-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .fruits-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .fruits-pro-list .prod-1 {
+}
+.container .fruits-pro-list .prod-2 {
+}
+.container .fruits-pro-list .prod-3 {
+}
+.container .fruits-pro-list .prod-4 {
+}
+.container .fruits-pro-list .prod-5 {
+}
+
+.container .health-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .health-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .health-pro-list .prod-1 {
+}
+.container .health-pro-list .prod-2 {
+}
+.container .health-pro-list .prod-3 {
+}
+.container .health-pro-list .prod-4 {
+}
+.container .health-pro-list .prod-5 {
+}
+
+.container .house-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .house-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .house-pro-list .prod-1 {
+}
+.container .house-pro-list .prod-2 {
+}
+.container .house-pro-list .prod-3 {
+}
+.container .house-pro-list .prod-4 {
+}
+.container .house-pro-list .prod-5 {
+}
+
+.container .beverages-pro-list {
+  padding: 20px 20px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  display: none;
+}
+
+.container .beverages-pro-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.container .beverages-pro-list .prod-1 {
+}
+.container .beverages-pro-list .prod-2 {
+}
+.container .beverages-pro-list .prod-3 {
+}
+.container .beverages-pro-list .prod-4 {
+}
+.container .beverages-pro-list .prod-5 {
+}
